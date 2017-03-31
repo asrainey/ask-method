@@ -1,3 +1,5 @@
+#rewrite ask method to remove answer variable
+
 def ask question
   while true
     puts question
@@ -5,13 +7,12 @@ def ask question
 
     if (reply == 'yes' || reply == 'no')
       if reply == 'yes'
-        answer = true
+        return true
       else
-        answer = false
+        return false
       end
       break
-    else
-      puts 'Please answer "yes" or "no".'
+    'Please answer "yes" or "no".'
     end
   end
 
